@@ -9,6 +9,7 @@ and system controls
 "#" = clear text
 
 "*" = show stop watch
+
 and any other key is just a typing key
 
 # troubleshooting
