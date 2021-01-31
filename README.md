@@ -10,3 +10,6 @@ and system controls
 "*" = show stop watch
 and any other key is just a typing key
 
+# troubleshooting
+if you get a bunch of weird text on your screen do not worry 
+just reset the board and it will be normal "sometimes".
