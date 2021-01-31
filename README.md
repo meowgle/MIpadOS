@@ -1,5 +1,6 @@
 # MIpadOS
-the Operating system for the MIpad
+the Operating system for the MIpad.
+
 MIpad OS is a custom verison of "Meowgle OS for Microcontrollers"
 or "MOSM" 
 
