@@ -95,26 +95,25 @@ lcd.createChar(4, loading);
   lcd.print("|MIpad |");
   lcd.setCursor(0, 1);
   lcd.print("--------|");
+  delay(5000);
   Serial.begin(9600);
     while (!Serial) {
         ; // wait for serial port to connect. Needed for native USB port only
     }
 
 
-    Serial.println("Lernel loaded");
-    delay(1000);
+    
+  lcd.clear();
+  Serial.println("Lernel loaded");
     Serial.println("initializing memory");
     char Memory1 = 0;
     char Memory2 = 0;
     char Memory3 = 0;
     char memory4 = 0;
     Serial.println("Memory initalized");
-    delay(1000);
     Serial.println("initalizing cache");
     char cache = 0;
-    delay(1000);
     Serial.println("loading boot Splash");
-    delay(1000);
     Serial.println("                 ");
     Serial.println("                 ");
     Serial.println("                 ");
@@ -125,20 +124,13 @@ lcd.createChar(4, loading);
     Serial.println("                 ");
     Serial.println("Lernel");
     Serial.println("1% [*    ]");
-    delay(1000);
     Serial.println("20% [**   ]");
-    delay(1000);
     Serial.println("30% [***  ]");
-    delay(1000);
     Serial.println("40% [*****]");
-    delay(1000);
-    delay(1000);
     Serial.println("Flushing serial");
-    delay(1000);
     Serial.flush();
     Serial.println("Serial cleared");
     Serial.println("OS ready");
-  lcd.clear();
     lcd.print("       ");
     lcd.write((byte)   0);
   lcd.setCursor(0, 1);
